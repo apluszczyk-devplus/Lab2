@@ -35,7 +35,7 @@ namespace Lab2
             services.Configure<RequestLocalizationOptions>(options =>
             {
                 options.SetDefaultCulture("en-Us");
-                options.AddSupportedUICultures("en-US", "de-DE", "ja-JP", "pl-PL", "it-IT");
+                options.AddSupportedUICultures("en-US", "de-DE", "pl-PL", "it-IT");
                 options.FallBackToParentUICultures = true;
 
                 options
