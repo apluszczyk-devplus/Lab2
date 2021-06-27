@@ -1,7 +1,13 @@
-﻿@model Lab2.Models.Client
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@using Microsoft.AspNetCore.Localization;
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+@model Lab2.Models.Client
 
 @{
-    ViewData["Title"] = "Usuń Klienta";
+    ViewData["Title"] = SharedLocalizer["Delete client"];
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -9,7 +15,7 @@
 
 <h3>Czy na pewno chcesz to usunąć?</h3>
 <div>
-    <h4>Klient</h4>
+    <h4>@SharedLocalizer["Client"]</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -49,10 +55,10 @@
             @Html.DisplayFor(model => model.BirthDate)
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Usuń" class="btn btn-danger" /> |
-        <a asp-action="Index">Powrót do listy</a>
+        <input type="submit" value="@SharedLocalizer["Delete"]" class="btn btn-danger" /> |
+        <a asp-action="Index">@SharedLocalizer["Back to list"]</a>
     </form>
 </div>

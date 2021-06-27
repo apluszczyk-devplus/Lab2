@@ -3,12 +3,8 @@
 @using Microsoft.AspNetCore.Localization;
 
 @inject IHtmlLocalizer<SharedResource> SharedLocalizer
-@* ViewLocalizer path is Resources.Pages.Index *@
-@inject IViewLocalizer ViewLocalizer
 
-@{
-    ViewData["Title"] = SharedLocalizer["Home"];
-}
+@{ ViewData["Title"] = SharedLocalizer["Home"]; }
 
 <div class="text-center">
     <h1 class="display-4">@SharedLocalizer["Hello"]</h1>

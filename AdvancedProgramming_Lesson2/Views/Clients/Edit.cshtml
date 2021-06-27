@@ -1,13 +1,19 @@
-﻿@model Lab2.Models.Client
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@using Microsoft.AspNetCore.Localization;
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+@model Lab2.Models.Client
 
 @{
-    ViewData["Title"] = "Edytuj Klienta";
+    ViewData["Title"] = SharedLocalizer["Edit client"];
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<h4>Klient</h4>
+<h4>@SharedLocalizer["Client"]</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -45,14 +51,14 @@
                 <span asp-validation-for="BirthDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="@SharedLocalizer["Save"]" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Powrót do listy</a>
+    <a asp-action="Index">@SharedLocalizer["Back to list"]</a>
 </div>
 
 @section Scripts {

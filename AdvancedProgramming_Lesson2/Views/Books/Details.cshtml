@@ -1,7 +1,13 @@
-﻿@model Lab2.Models.Book
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@using Microsoft.AspNetCore.Localization;
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+@model Lab2.Models.Book
 
 @{
-    ViewData["Title"] = "Szczegóły Książki";
+    ViewData["Title"] = SharedLocalizer["Book details"];
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -44,6 +50,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edytuj</a> |
-    <a asp-action="Index">Powrót do listy</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id">@SharedLocalizer["Edit"]</a> |
+    <a asp-action="Index">@SharedLocalizer["Back to list"]</a>
 </div>
