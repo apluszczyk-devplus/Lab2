@@ -177,6 +177,9 @@
   <data name="Delete client" xml:space="preserve">
     <value>Usuń klienta</value>
   </data>
+  <data name="Delete confirmation" xml:space="preserve">
+    <value>Czy na pewno chcesz to usunąć?</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Szczegóły</value>
   </data>
@@ -235,7 +238,7 @@
     <value>Polityka Prywatności</value>
   </data>
   <data name="Privacy Policy Content" xml:space="preserve">
-    <value>This is no privacy policy :)</value>
+    <value>Tutaj znajduje się brak polityki prywatności :)</value>
   </data>
   <data name="Rating" xml:space="preserve">
     <value>Ocena</value>

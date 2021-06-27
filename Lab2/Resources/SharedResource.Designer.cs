@@ -241,6 +241,15 @@ namespace Lab2.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete this?.
+        /// </summary>
+        internal static string Delete_confirmation {
+            get {
+                return ResourceManager.GetString("Delete confirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Details.
         /// </summary>
         internal static string Details {

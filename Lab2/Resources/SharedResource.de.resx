@@ -177,6 +177,9 @@
   <data name="Delete client" xml:space="preserve">
     <value>Kunden löschen</value>
   </data>
+  <data name="Delete confirmation" xml:space="preserve">
+    <value>Möchten Sie dies wirklich löschen?</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Einzelheiten</value>
   </data>

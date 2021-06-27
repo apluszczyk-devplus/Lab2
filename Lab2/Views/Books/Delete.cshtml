@@ -7,14 +7,15 @@
 @model Lab2.Models.Book
 
 @{
-    ViewData["Title"] = SharedLocalizer["Book details"];
+    ViewData["Title"] = SharedLocalizer["Delete book"];
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>@ViewData["Title"]</h1>
 
+<h3>@SharedLocalizer["Delete confirmation"]</h3>
 <div>
-    <h4>Książka</h4>
+    <h4>@SharedLocalizer["Book"]</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -48,8 +49,10 @@
             @Html.DisplayFor(model => model.Country)
         </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">@SharedLocalizer["Edit"]</a> |
-    <a asp-action="Index">@SharedLocalizer["Back to list"]</a>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="@SharedLocalizer["Delete"]" class="btn btn-danger" /> |
+        <a asp-action="Index">@SharedLocalizer["Back to list"]</a>
+    </form>
 </div>
