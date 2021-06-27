@@ -46,7 +46,13 @@ namespace Lab2
             services
                 .AddRazorPages()
                 .AddViewLocalization();
-            
+
+            services.AddMvc().AddDataAnnotationsLocalization(options =>
+            {
+                options.DataAnnotationLocalizerProvider = (type, factory) =>
+                    factory.Create(typeof(SharedResource));
+            });
+
             services.AddScoped<RequestLocalizationCookiesMiddleware>();
         }
 

@@ -120,14 +120,113 @@
   <data name="About" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="About content 1" xml:space="preserve">
+    <value>...and this is my photo. I am made up, so I can do what I want. At the moment I am standing near the text and smiling.</value>
+  </data>
+  <data name="About content 2" xml:space="preserve">
+    <value>My favourite activity is impersonating. Right now I am impersonating Jan Kowalski... You will never know who I really am</value>
+  </data>
+  <data name="About title" xml:space="preserve">
+    <value>My name is Jan Kowalski...</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Back to list" xml:space="preserve">
+    <value>Back to the list</value>
+  </data>
+  <data name="Birth date" xml:space="preserve">
+    <value>Birth date</value>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>Book</value>
+  </data>
+  <data name="Book details" xml:space="preserve">
+    <value>Book details</value>
+  </data>
+  <data name="Books" xml:space="preserve">
+    <value>Books</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="Client details" xml:space="preserve">
+    <value>Client details</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Create book" xml:space="preserve">
+    <value>Create book</value>
+  </data>
+  <data name="Create client" xml:space="preserve">
+    <value>Create client</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Delete book" xml:space="preserve">
+    <value>Delete book</value>
+  </data>
+  <data name="Delete client" xml:space="preserve">
+    <value>Delete client</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Edit book" xml:space="preserve">
+    <value>Edit book</value>
+  </data>
+  <data name="Edit client" xml:space="preserve">
+    <value>Edit client</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Field required" xml:space="preserve">
+    <value>Field required</value>
+  </data>
+  <data name="First name" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="Future date not allowed" xml:space="preserve">
+    <value>Future date is not allowed</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Invalid date format" xml:space="preserve">
+    <value>Invalid date format</value>
+  </data>
+  <data name="Invalid email" xml:space="preserve">
+    <value>This email address is invalid</value>
+  </data>
+  <data name="Last name" xml:space="preserve">
+    <value>Last name</value>
   </data>
   <data name="Learn End" xml:space="preserve">
     <value>about creation of mvc .net core apps</value>
   </data>
   <data name="Learn Start" xml:space="preserve">
     <value>Learn</value>
+  </data>
+  <data name="Phone number" xml:space="preserve">
+    <value>Phone number</value>
   </data>
   <data name="Privacy" xml:space="preserve">
     <value>Privacy</value>
@@ -136,6 +235,33 @@
     <value>Privacy Policy</value>
   </data>
   <data name="Privacy Policy Content" xml:space="preserve">
-    <value>This is a secret</value>
+    <value>This is no privacy policy :)</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="Release date" xml:space="preserve">
+    <value>Release date</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Second name" xml:space="preserve">
+    <value>Second name</value>
+  </data>
+  <data name="Text max 30" xml:space="preserve">
+    <value>Text cannot be longer than 30 characters</value>
+  </data>
+  <data name="Text max 50" xml:space="preserve">
+    <value>Text cannot be longer than 50 characters</value>
+  </data>
+  <data name="Text max 60" xml:space="preserve">
+    <value>Text cannot be longer than 60 characters</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Zero to ten allowed" xml:space="preserve">
+    <value>Allowed values between 0 and 10</value>
   </data>
 </root>
