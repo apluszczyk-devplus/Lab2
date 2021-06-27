@@ -25,5 +25,9 @@ namespace Lab2.Models
         [Required(ErrorMessage = "Pole wymagane")]
         [StringLength(60, ErrorMessage = "Wpisany tekst nie może być dłuższy niż 60 znaków")]
         public string Author { get; set; }
+        [Display(Name = "Kraj")]
+        [Required(ErrorMessage = "Pole wymagane")]
+        [StringLength(30, ErrorMessage = "Wpisany tekst nie może być dłuższy niż 30 znaków")]
+        public string Country { get; set; }
     }
 }

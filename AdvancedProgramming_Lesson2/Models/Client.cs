@@ -13,6 +13,11 @@ namespace Lab2.Models
         [StringLength(30, ErrorMessage = "Wpisany tekst nie może być dłuższy niż 30 znaków")]
         public string FirstName { get; set; }
         [DataType(DataType.Text)]
+        [Display(Name = "Drugie imię")]
+        [Required(ErrorMessage = "Pole wymagane")]
+        [StringLength(30, ErrorMessage = "Wpisany tekst nie może być dłuższy niż 30 znaków")]
+        public string SecondName { get; set; }
+        [DataType(DataType.Text)]
         [Display(Name = "Nazwisko")]
         [Required(ErrorMessage = "Pole wymagane")]
         [StringLength(30, ErrorMessage = "Wpisany tekst nie może być dłuższy niż 30 znaków")]
