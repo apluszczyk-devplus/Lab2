@@ -3,12 +3,12 @@
 @using Microsoft.AspNetCore.Localization;
 
 @inject IHtmlLocalizer<SharedResource> SharedLocalizer
+@* ViewLocalizer path is Resources.Pages.Index *@
+@inject IViewLocalizer ViewLocalizer
 
 @{
-    ViewData["Title"] = SharedLocalizer["Privacy Policy"];
+    ViewData["Title"] = SharedLocalizer["Privacy policy"];
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>
-    @SharedLocalizer["Privacy Policy Content"]
-</p>
+<p>@SharedLocalizer["Privacy policy content"]</p>

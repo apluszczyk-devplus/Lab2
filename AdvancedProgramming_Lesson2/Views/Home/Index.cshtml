@@ -3,13 +3,14 @@
 @using Microsoft.AspNetCore.Localization;
 
 @inject IHtmlLocalizer<SharedResource> SharedLocalizer
-
 @* ViewLocalizer path is Resources.Pages.Index *@
 @inject IViewLocalizer ViewLocalizer
 
-@{ ViewData["Title"] = SharedLocalizer["Home"]; }
+@{
+    ViewData["Title"] = SharedLocalizer["Home"];
+}
 
 <div class="text-center">
-    <h1 class="display-4">@ViewData["Title"]</h1>
-    <p>@SharedLocalizer["Learn Start"] <a href="https://docs.microsoft.com/aspnet/core">@SharedLocalizer["Learn End"]</a>.</p>
+    <h1 class="display-4">@SharedLocalizer["Hello"]</h1>
+    <p>@SharedLocalizer["Learn more"] <a href="https://docs.microsoft.com/aspnet/core">@SharedLocalizer["about creation of mvc .net core apps"]</a>.</p>
 </div>
